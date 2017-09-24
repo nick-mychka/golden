@@ -3,6 +3,7 @@
 body {
 	font: 14px/1 'Roboto Slab', serif;
 	color: #777777;
+	min-width: 320px;
 }
 
 div {
@@ -16,13 +17,17 @@ div {
 	clear: both;
 }
 
+.lg_d-n {
+	display: none;
+}
+ /* /////// header /////// */
 header {
 	background: url(../img/main_img.jpg) no-repeat top center / cover;
-	min-height: 644px;
+	height: 644px;
 }
 
 .conteiner {
-	width: 930px;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 
@@ -32,12 +37,16 @@ header {
 
 .logo {
 	float: left;
-	margin-top: 43px;
+	margin-top: 3.5%;
 }
 
 nav {
 	float: right;
-	margin-top: 46px;
+	margin-top: 4%;
+}
+
+.burger_nav {
+	display: none;
 }
 
 .menu {
@@ -67,7 +76,7 @@ nav {
 }
 
 .titles {
-	margin-top: 220px;
+	margin-top: 19%;
 }
 
 .titles__first, .title p, .works p {
@@ -106,7 +115,7 @@ h2 {
 	text-transform: uppercase;
 	text-decoration: none;
 	border-radius: 3px;
-	margin-top: 50px;
+	margin-top: 5%;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 700;
@@ -117,6 +126,8 @@ h2 {
 	color: #42403f;
 	transform: rotate(-360deg);
 }
+
+/* /////// first section /////// */
 
 .title p {
 	font-size: 16px;
@@ -131,7 +142,7 @@ h2 {
 .services__item {
 	float: left;
 	width: 290px;
-	margin-left: 30px;
+	margin-left: 10%;
 	text-align: center;
 }
 
@@ -168,7 +179,7 @@ h3, .about__left span, .about__right span {
 
 .works__block {
 	float: left;
-	margin-left: 28px;
+	margin-left: 5.3%;
 	margin-top: 45px;
 	width: 291px;
 	height: 391px;
@@ -177,12 +188,13 @@ h3, .about__left span, .about__right span {
 	transition: all 0.3s;
 }
 
-.works__block:first-child, .works__block:nth-child(4) {
+/* .works__block:first-child, .works__block:nth-child(4) {
 	margin-left: 0;
-}
+} */
 
 .works__block_img {
 	transition: all 0.3s;
+	width: 100%;
 }
 
 .works__block_img:hover {
@@ -208,7 +220,7 @@ h3, .about__left span, .about__right span {
 }
 
 .about_img {
-	margin: 0 40px;
+	margin: 0 125px;
 	width: 183px;
 	height: 183px;
 	position: relative;
@@ -268,13 +280,13 @@ h3, .about__left span, .about__right span {
 .team__item {
 	float: left;
 	width: 234px;
-	margin-left: 50px;
+	margin-left: 7%;
 	text-align: center;
 }
 
-.team__item:first-child {
+/* .team__item:first-child {
 	margin-left: 0;
-}
+} */
 
 .team__item h3 {
 	font-size: 16px;
@@ -310,6 +322,7 @@ h3, .about__left span, .about__right span {
 .contact {
 	color: #bbbbbb;
 	margin-top: 70px;
+	padding: 0 5% 0 5%;
 }
 
 .contact input[type="text"] {
@@ -358,7 +371,7 @@ textarea {
 }
 
 .foot__social {
-	margin-left: 153px;
+	margin-left: 22%;
 	text-align: center;
 }
 
